@@ -210,7 +210,7 @@ entries: map[hash,embed] = {
         skinMeshProperties: embed = SkinMeshDataProperties {
             skeleton: string = "ASSETS/Characters/Aatrox/Skins/Base/Aatrox.skl"
             simpleSkin: string = "ASSETS/Characters/Aatrox/Skins/Base/Aatrox.skn"
-            texture: string = "ASSETS/Characters/Aatrox/Skins/Base/Aatrox_Base_TX_CM.dds"
+            texture: string = "ASSETS/Characters/Aatrox/Skins/Base/Mat_Body.dds"
             skinScale: f32 = 1.09000003
             selfIllumination: f32 = 0.699999988
             brushAlphaOverride: f32 = 0.550000012
@@ -223,15 +223,19 @@ entries: map[hash,embed] = {
             initialSubmeshShadowsToHide: string = "Banner"
             materialOverride: list[embed] = {
                 SkinMeshDataProperties_MaterialOverride {
-                    material: link = "Characters/Aatrox/Skins/Skin0/Materials/Sword_inst"
+                    texture: string = "ASSETS/Characters/Aatrox/Skins/Base/Mat_Sword.dds"
                     submesh: string = "Sword"
                 }
                 SkinMeshDataProperties_MaterialOverride {
-                    material: link = "Characters/Aatrox/Skins/Skin0/Materials/Wing_inst"
+                    texture: string = "ASSETS/Characters/Aatrox/Skins/Base/Mat_Body.dds"
+                    submesh: string = "Body"
+                }
+                SkinMeshDataProperties_MaterialOverride {
+                    texture: string = "ASSETS/Characters/Aatrox/Skins/Base/Mat_Wings.dds"
                     submesh: string = "Wings"
                 }
                 SkinMeshDataProperties_MaterialOverride {
-                    material: link = "Characters/Aatrox/Skins/Skin0/Materials/Banner_inst"
+                    texture: string = "ASSETS/Characters/Aatrox/Skins/Base/Mat_Banner.dds"
                     submesh: string = "Banner"
                 }
             }
