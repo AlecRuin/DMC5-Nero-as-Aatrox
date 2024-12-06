@@ -1442,22 +1442,28 @@ entries: map[hash,embed] = {
                         mJointNameToOverride: hash = "weapon"
                         mJointNameToSnapTo: hash = "Weapon_World"
                     }
-                    "Wings" = SubmeshVisibilityEventData {
-                        mStartFrame: f32 = 159
-                        mShowSubmeshList: list[hash] = {
-                            "Wings"
-                        }
-                        mHideSubmeshList: list[hash] = {
-                            "banner"
-                            "Shoulder"
-                        }
-                    }
                     0xfca8c63b = ParticleEventData {
                         mStartFrame: f32 = 37
                         mEffectKey: hash = "Aatrox_Taunt_Ground"
                         mParticleEventDataPairList: list[embed] = {
                             ParticleEventDataPair {
                                 mBoneName: hash = "BUFFBONE_GLB_GROUND_LOC"
+                            }
+                        }
+                    }
+                    "Wings" = SubmeshVisibilityEventData {
+                        mHideSubmeshList: list[hash] = {
+                            "banner"
+                            "Shoulder"
+                            "Wings"
+                        }
+                    }
+                    "Characters/Aatrox/Skins/Skin0/Particles/Aatrox_Taunt_Wings" = ParticleEventData{
+                        mEffectKey: hash = "Aatrox_Taunt_Wings"
+                        mStartFrame: f32 = 1
+                        mParticleEventDataPairList: list[embed] = {
+                            ParticleEventDataPair{
+                                mBoneName: hash = "C_Buffbone_GLB_Layout_Loc"
                             }
                         }
                     }
@@ -1478,13 +1484,19 @@ entries: map[hash,embed] = {
                         mJointNameToOverride: hash = "weapon"
                         mJointNameToSnapTo: hash = "Weapon_World"
                     }
-                    "Wings" = SubmeshVisibilityEventData {
-                        mShowSubmeshList: list[hash] = {
-                            "Wings"
+                    "Characters/Aatrox/Skins/Skin0/Particles/Aatrox_Taunt_Wings_Loop" = ParticleEventData{
+                        mEffectKey: hash = "Aatrox_Taunt_Wings_Loop"
+                        mParticleEventDataPairList: list[embed]={
+                            ParticleEventDataPair{
+                                mBoneName: hash="C_Buffbone_GLB_Layout_Loc"
+                            }
                         }
+                    }
+                    "Wings" = SubmeshVisibilityEventData {
                         mHideSubmeshList: list[hash] = {
                             "banner"
                             "Shoulder"
+                            "Wings"
                         }
                     }
                 }

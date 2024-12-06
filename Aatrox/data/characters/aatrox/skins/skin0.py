@@ -23,6 +23,7 @@ entries: map[hash,embed] = {
         loadscreen: embed = CensoredImage {
             image: string = "ASSETS/Characters/Aatrox/Skins/Base/AatroxLoadscreen.dds"
         }
+        0xeda7817e: link = "Characters/Aatrox/Skins/Skin0/Materials/UI_Base_HoL_Ahri_Skin86_inst"
         skinAudioProperties: embed = skinAudioProperties {
             tagEventList: list[string] = {
                 "Aatrox"
@@ -486,7 +487,7 @@ entries: map[hash,embed] = {
                 birthScale0: embed = ValueVector3 {
                     constantValue: vec3 = { 1.00999999, 1, 1 }
                 }
-                texture: string = "ASSETS/Characters/Aatrox/Skins/Base/Aatrox_Base_TX_CM.dds"
+                texture: string = "ASSETS/Characters/Aatrox/Skins/Base/Mat_Body.dds"
                 numFrames: u16 = 4
             }
             VfxEmitterDefinitionData {
@@ -544,7 +545,7 @@ entries: map[hash,embed] = {
                 birthScale0: embed = ValueVector3 {
                     constantValue: vec3 = { 1.00999999, 1, 1 }
                 }
-                texture: string = "ASSETS/Characters/Aatrox/Skins/Base/Aatrox_Base_Sword_TX_CM.dds"
+                texture: string = "ASSETS/Characters/Aatrox/Skins/Base/Mat_Sword.dds"
                 numFrames: u16 = 4
             }
             VfxEmitterDefinitionData {
@@ -623,7 +624,7 @@ entries: map[hash,embed] = {
                 birthScale0: embed = ValueVector3 {
                     constantValue: vec3 = { 1.00999999, 1, 1 }
                 }
-                texture: string = "ASSETS/Characters/Aatrox/Skins/Base/Aatrox_Wings_TX_CM.dds"
+                texture: string = "ASSETS/Characters/Aatrox/Skins/Base/Mat_Wings.dds"
                 numFrames: u16 = 4
             }
         }
@@ -744,6 +745,92 @@ entries: map[hash,embed] = {
         }
         particleName: string = "Aatrox_Base_P_Ready"
         particlePath: string = "Characters/Aatrox/Skins/Skin0/Particles/Aatrox_Base_P_Ready"
+    }
+    "Characters/Aatrox/Skins/Skin0/Particles/Aatrox_Taunt_Wings" = VfxSystemDefinitionData{
+        complexEmitterDefinitionData: list[pointer] ={
+            VfxEmitterDefinitionData {
+                Rate: embed = ValueFloat {
+                    ConstantValue: f32 = 1
+                }
+                ParticleLifetime: embed = ValueFloat {
+                    ConstantValue: f32 = 13.33
+                }
+                Lifetime: option[f32] = {
+                    13.33
+                }
+                IsSingleParticle: flag = true
+                EmitterName: string = "WingsAnim"
+                BindWeight: embed = ValueFloat {
+                    ConstantValue: f32 = 1
+                }
+                0x3bf0b4ed: pointer = 0xee39916f {
+                    EmitOffset: vec3 = { 0, 180, -50 }
+                }
+                Primitive: pointer = VfxPrimitiveMesh {
+                    mMesh: embed = VfxMeshDefinitionData {
+                        mMeshName: string = "ASSETS/Characters/Aatrox/Skins/Base/Particles/Aatrox_Taunt_Wings.skn"
+                        mMeshSkeletonName: string = "ASSETS/Characters/Aatrox/Skins/Base/Particles/Aatrox_Taunt_Wings.skl"
+                        mAnimationName: string = "ASSETS/Characters/Aatrox/Skins/Base/Animations/aatrox_taunt_wings.anm"
+                    }
+                }
+                BlendMode: u8 = 1
+                Color: embed = ValueColor {
+                    ConstantValue: vec4 = { 1.0, 1.0, 1.0, 1 }
+                }
+                birthRotation0: embed = ValueVector3 {
+                    constantValue: vec3 = { 0, 140, 0 }
+                }
+                BirthScale0: embed = ValueVector3 {
+                    ConstantValue: vec3 = { 1, 1, 1 }
+                }
+                Texture: string = "ASSETS/Characters/Aatrox/Skins/Base/Mat_Wings.dds"
+            }
+        }
+        particleName: string = "Aatrox_Taunt_Wings"
+        particlePath: string="Characters/Aatrox/Skins/Skin0/Particles/Aatrox_Taunt_Wings"
+    }
+    "Characters/Aatrox/Skins/Skin0/Particles/Aatrox_Taunt_Wings_Loop" = VfxSystemDefinitionData{
+        complexEmitterDefinitionData: list[pointer] ={
+            VfxEmitterDefinitionData {
+                Rate: embed = ValueFloat {
+                    ConstantValue: f32 = 1
+                }
+                ParticleLifetime: embed = ValueFloat {
+                    ConstantValue: f32 = 13.33
+                }
+                Lifetime: option[f32] = {
+                    13.33
+                }
+                IsSingleParticle: flag = true
+                EmitterName: string = "WingsAnim"
+                BindWeight: embed = ValueFloat {
+                    ConstantValue: f32 = 1
+                }
+                0x3bf0b4ed: pointer = 0xee39916f {
+                    EmitOffset: vec3 = { 0, 180, -50 }
+                }
+                Primitive: pointer = VfxPrimitiveMesh {
+                    mMesh: embed = VfxMeshDefinitionData {
+                        mMeshName: string = "ASSETS/Characters/Aatrox/Skins/Base/Particles/Aatrox_Taunt_Wings.skn"
+                        mMeshSkeletonName: string = "ASSETS/Characters/Aatrox/Skins/Base/Particles/Aatrox_Taunt_Wings.skl"
+                        mAnimationName: string = "ASSETS/Characters/Aatrox/Skins/Base/Animations/aatrox_taunt_wings_loop.anm"
+                    }
+                }
+                BlendMode: u8 = 1
+                Color: embed = ValueColor {
+                    ConstantValue: vec4 = { 1.0, 1.0, 1.0, 1 }
+                }
+                birthRotation0: embed = ValueVector3 {
+                    constantValue: vec3 = { 0, 140, 0 }
+                }
+                BirthScale0: embed = ValueVector3 {
+                    ConstantValue: vec3 = { 1, 1, 1 }
+                }
+                Texture: string = "ASSETS/Characters/Aatrox/Skins/Base/Mat_Wings.dds"
+            }
+        }
+        particleName: string = "Aatrox_Taunt_Wings_Loop"
+        particlePath: string="Characters/Aatrox/Skins/Skin0/Particles/Aatrox_Taunt_Wings_Loop"
     }
     "Characters/Aatrox/Skins/Skin0/Materials/Sword_inst" = StaticMaterialDef {
         name: string = "Characters/Aatrox/Skins/Skin0/Materials/Sword_inst"
@@ -1279,6 +1366,226 @@ entries: map[hash,embed] = {
             }
         }
     }
+    "Characters/Aatrox/Skins/Skin0/Materials/UI_Base_HoL_Ahri_Skin86_inst" = StaticMaterialDef {
+        name: string = "Characters/Aatrox/Skins/Skin0/Materials/UI_Base_HoL_Ahri_Skin86_inst"
+        type: u32 = 3
+        samplerValues: list2[embed] = {
+            StaticMaterialShaderSamplerDef {
+                samplerName: string = "UI_Secondary_Texture"
+                textureName: string = "ASSETS/Characters/Aatrox/Skins/base/ahriLoadMaskPacked.SKINS_Ahri_HoL.tex"
+                addressW: u32 = 1
+            }
+        }
+        paramValues: list2[embed] = {
+            StaticMaterialShaderParamDef {
+                name: string = "UI_Primary_UVRotation_Offset"
+                value: vec4 = { 0.5, 0.5, 0, 0 }
+            }
+            StaticMaterialShaderParamDef {
+                name: string = "UI_Primary_UVRorationSpeed"
+                value: vec4 = { 1, 0, 0, 0 }
+            }
+            StaticMaterialShaderParamDef {
+                name: string = "Flipbook_Frame"
+            }
+            StaticMaterialShaderParamDef {
+                name: string = "UI_Primary_Tile"
+                value: vec4 = { 1, 1, 0, 0 }
+            }
+            StaticMaterialShaderParamDef {
+                name: string = "Flibook_TileSize"
+                value: vec4 = { 1, 1, 0, 0 }
+            }
+            StaticMaterialShaderParamDef {
+                name: string = "Flipbook_Speed"
+            }
+            StaticMaterialShaderParamDef {
+                name: string = "UI_Secondary_DistortionControl"
+                value: vec4 = { 0.0500000007, 0.00499999989, 0, 0 }
+            }
+            StaticMaterialShaderParamDef {
+                name: string = "UI_Secondary_R_UVRorationSpeed"
+            }
+            StaticMaterialShaderParamDef {
+                name: string = "UI_Secondary_R_Tint"
+                value: vec4 = { 1, 0, 0, 1 }
+            }
+            StaticMaterialShaderParamDef {
+                name: string = "UI_Secondary_UVRotation_Offset"
+                value: vec4 = { 0.5, 0.5, 0, 0 }
+            }
+            StaticMaterialShaderParamDef {
+                name: string = "UI_Secondary_R_Tile"
+                value: vec4 = { 1, 1, 0, 0 }
+            }
+            StaticMaterialShaderParamDef {
+                name: string = "UI_Secondary_R_ScrollSpeed"
+                value: vec4 = { 0.5, -0.25, 0, 0 }
+            }
+            StaticMaterialShaderParamDef {
+                name: string = "UI_Secondary_G_UVRorationSpeed"
+            }
+            StaticMaterialShaderParamDef {
+                name: string = "UI_Secondary_B_UVRorationSpeed"
+            }
+            StaticMaterialShaderParamDef {
+                name: string = "UI_Secondary_G_Tint"
+                value: vec4 = { 0, 1, 0, 1 }
+            }
+            StaticMaterialShaderParamDef {
+                name: string = "UI_Secondary_G_Tile"
+                value: vec4 = { 1, 1, 0, 0 }
+            }
+            StaticMaterialShaderParamDef {
+                name: string = "UI_Secondary_G_ScrollSpeed"
+            }
+            StaticMaterialShaderParamDef {
+                name: string = "UI_Secondady_B_MaskStrength"
+                value: vec4 = { 1, 0, 0, 0 }
+            }
+            StaticMaterialShaderParamDef {
+                name: string = "UI_Secondary_Tex_TintColor"
+                value: vec4 = { 1, 1, 1, 1 }
+            }
+            StaticMaterialShaderParamDef {
+                name: string = "DesaturationValue"
+            }
+            StaticMaterialShaderParamDef {
+                name: string = "GlowPulseFrequency"
+                value: vec4 = { 2, 0, 0, 0 }
+            }
+            StaticMaterialShaderParamDef {
+                name: string = "TintColor"
+                value: vec4 = { 1, 1, 1, 1 }
+            }
+            StaticMaterialShaderParamDef {
+                name: string = "RGBGlowMinMaxValue"
+                value: vec4 = { 0.850000024, 1.14999998, 0, 0 }
+            }
+            StaticMaterialShaderParamDef {
+                name: string = "AlphaGlowMinMaxValue"
+                value: vec4 = { 1, 1, 0, 0 }
+            }
+            StaticMaterialShaderParamDef {
+                name: string = "UI_Secondary_B_Tile"
+                value: vec4 = { 1, 1, 0, 0 }
+            }
+            StaticMaterialShaderParamDef {
+                name: string = "UI_Secondary_B_ScrollSpeed"
+            }
+            StaticMaterialShaderParamDef {
+                name: string = "UI_Secondary_B_Mask_Tile"
+                value: vec4 = { 1, 1, 0, 0 }
+            }
+            StaticMaterialShaderParamDef {
+                name: string = "UI_Secondary_B_Mask_ScrollSpeed"
+            }
+            StaticMaterialShaderParamDef {
+                name: string = "UI_Secondary_B_Mask_UVRorationSpeed"
+            }
+            StaticMaterialShaderParamDef {
+                name: string = "Shine_FrequencySpeed"
+                value: vec4 = { 10, 8, 0, 0 }
+            }
+            StaticMaterialShaderParamDef {
+                name: string = "Shine_Direction"
+                value: vec4 = { 0.5, -0.699999988, 0, 0 }
+            }
+            StaticMaterialShaderParamDef {
+                name: string = "Shine_Strength"
+                value: vec4 = { 0.0199999996, 0, 0, 0 }
+            }
+            StaticMaterialShaderParamDef {
+                name: string = "Shine_Color"
+                value: vec4 = { 1, 1, 1, 1 }
+            }
+        }
+        switches: list2[embed] = {
+            StaticMaterialSwitchDef {
+                name: string = "SHINE_ADDITIVE_ON"
+                on: bool = false
+            }
+            StaticMaterialSwitchDef {
+                name: string = "DESATURATION_ON"
+                on: bool = false
+            }
+            StaticMaterialSwitchDef {
+                name: string = "GLOW_PULSE_ON"
+            }
+            StaticMaterialSwitchDef {
+                name: string = "UI_SECONDARY_BLEND_ON"
+                on: bool = false
+            }
+            StaticMaterialSwitchDef {
+                name: string = "UI_SECONDARY_ON"
+                on: bool = false
+            }
+            StaticMaterialSwitchDef {
+                name: string = "UI_SECONDAY_G_DISTORTION_ON"
+                on: bool = false
+            }
+            StaticMaterialSwitchDef {
+                name: string = "UI_SECONDAY_R_DISTORTION_ON"
+                on: bool = false
+            }
+            StaticMaterialSwitchDef {
+                name: string = "UI_PRIMARY_FLIPBOOKANIM_ON"
+                on: bool = false
+            }
+            StaticMaterialSwitchDef {
+                name: string = "UI_SECONDARY_B_MASK_ON"
+                on: bool = false
+            }
+            StaticMaterialSwitchDef {
+                name: string = "UI_SECONDARY_B_MASK_ROTATION_ON"
+                on: bool = false
+            }
+            StaticMaterialSwitchDef {
+                name: string = "UI_SECONDARY_RGB_SCROLL_ON"
+            }
+            StaticMaterialSwitchDef {
+                name: string = "UI_PRIMARY_ROTATION_ON"
+                on: bool = false
+            }
+            StaticMaterialSwitchDef {
+                name: string = "UI_SECONDARY_B_MASK_ON_UI_PRIMARY"
+                on: bool = false
+            }
+            StaticMaterialSwitchDef {
+                name: string = "UI_SECONDARY_B_MASK_SCROLL_ON"
+                on: bool = false
+            }
+            StaticMaterialSwitchDef {
+                name: string = "UI_SECONDARY_RGB_ROTATION_ON"
+                on: bool = false
+            }
+            StaticMaterialSwitchDef {
+                name: string = "UI_PRIMARY_FLIPBOOK_ON"
+                on: bool = false
+            }
+            StaticMaterialSwitchDef {
+                name: string = "SHINE_ON"
+            }
+            StaticMaterialSwitchDef {
+                name: string = "DISTORTION_ON_PRIMARY"
+            }
+        }
+        techniques: list[embed] = {
+            StaticMaterialTechniqueDef {
+                name: string = "normal"
+                passes: list[embed] = {
+                    StaticMaterialPassDef {
+                        shader: link = "Shaders/UI/UI_BaseShader"
+                        depthEnable: bool = false
+                        blendEnable: bool = true
+                        cullEnable: bool = false
+                        dstColorBlendFactor: u32 = 7
+                        dstAlphaBlendFactor: u32 = 7
+                    }
+                }
+            }
+        }
+    }
     "Characters/Aatrox/Skins/Skin0/Resources" = ResourceResolver {
         resourceMap: map[hash,link] = {
             "Aatrox_Q_Indicator_01" = "Characters/Aatrox/Skins/Skin0/Particles/Aatrox_Base_Q_Indicator_01"
@@ -1342,6 +1649,8 @@ entries: map[hash,embed] = {
             0x5b2b3b83 = "Maps/Particles/SRX/Base/SRX_Audio_Hextech_Storm_loop"
             0x2c43403d = "Maps/Particles/SR/SRU_Braziers_Chemtech_Child_02"
             0x20bae730 = "Maps/Shipping/Map22/Particles/Set9/TFT9_Trait_Demacia_Celebration_Child7"
+            "Aatrox_Taunt_Wings" = "Characters/Aatrox/Skins/Skin0/Particles/Aatrox_Taunt_Wings"
+            "Aatrox_Taunt_Wings_Loop" = "Characters/Aatrox/Skins/Skin0/Particles/Aatrox_Taunt_Wings_Loop"
         }
     }
 }
