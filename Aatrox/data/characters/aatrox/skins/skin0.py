@@ -282,7 +282,27 @@ entries: map[hash,embed] = {
                 }
                 PersistentVfxs: list2[embed] = {
                     PersistentVfxData {
-                        boneName: string = "Weapon_Heart"
+                        boneName: string = "Weapon_ExhaustLeft1"
+                        effectKey: hash = "Aatrox_P_Ready"
+                    }
+                    PersistentVfxData {
+                        boneName: string = "Weapon_ExhaustLeft2"
+                        effectKey: hash = "Aatrox_P_Ready"
+                    }
+                    PersistentVfxData {
+                        boneName: string = "Weapon_ExhaustLeft3"
+                        effectKey: hash = "Aatrox_P_Ready"
+                    }
+                    PersistentVfxData {
+                        boneName: string = "Weapon_ExhaustRight1"
+                        effectKey: hash = "Aatrox_P_Ready"
+                    }
+                    PersistentVfxData {
+                        boneName: string = "Weapon_ExhaustRight2"
+                        effectKey: hash = "Aatrox_P_Ready"
+                    }
+                    PersistentVfxData {
+                        boneName: string = "Weapon_ExhaustRight3"
                         effectKey: hash = "Aatrox_P_Ready"
                     }
                 }

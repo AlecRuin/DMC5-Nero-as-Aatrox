@@ -1025,23 +1025,6 @@ entries: map[hash,embed] = {
                 birthColor: embed = ValueColor {
                     constantValue: vec4 = { 0.635294139, 0, 0, 1 }
                     dynamics: pointer = VfxAnimatedColorVariableData {
-                        probabilityTables: list[pointer] = {
-                            VfxProbabilityTableData {}
-                            VfxProbabilityTableData {
-                                keyTimes: list[f32] = {
-                                    0
-                                    0.150000006
-                                    1
-                                }
-                                keyValues: list[f32] = {
-                                    0
-                                    0.5
-                                    1
-                                }
-                            }
-                            VfxProbabilityTableData {}
-                            VfxProbabilityTableData {}
-                        }
                         times: list[f32] = {
                             0
                         }
@@ -1311,23 +1294,6 @@ entries: map[hash,embed] = {
                 blendMode: u8 = 1
                 birthColor: embed = ValueColor {
                     dynamics: pointer = VfxAnimatedColorVariableData {
-                        probabilityTables: list[pointer] = {
-                            VfxProbabilityTableData {}
-                            VfxProbabilityTableData {
-                                keyTimes: list[f32] = {
-                                    0
-                                    0.150000006
-                                    1
-                                }
-                                keyValues: list[f32] = {
-                                    0
-                                    0.5
-                                    1
-                                }
-                            }
-                            VfxProbabilityTableData {}
-                            VfxProbabilityTableData {}
-                        }
                         times: list[f32] = {
                             0
                         }
@@ -2501,23 +2467,6 @@ entries: map[hash,embed] = {
                 birthColor: embed = ValueColor {
                     constantValue: vec4 = { 0.635294139, 0, 0, 1 }
                     dynamics: pointer = VfxAnimatedColorVariableData {
-                        probabilityTables: list[pointer] = {
-                            VfxProbabilityTableData {}
-                            VfxProbabilityTableData {
-                                keyTimes: list[f32] = {
-                                    0
-                                    0.150000006
-                                    1
-                                }
-                                keyValues: list[f32] = {
-                                    0
-                                    0.5
-                                    1
-                                }
-                            }
-                            VfxProbabilityTableData {}
-                            VfxProbabilityTableData {}
-                        }
                         times: list[f32] = {
                             0
                         }
@@ -2847,23 +2796,6 @@ entries: map[hash,embed] = {
                 blendMode: u8 = 1
                 birthColor: embed = ValueColor {
                     dynamics: pointer = VfxAnimatedColorVariableData {
-                        probabilityTables: list[pointer] = {
-                            VfxProbabilityTableData {}
-                            VfxProbabilityTableData {
-                                keyTimes: list[f32] = {
-                                    0
-                                    0.150000006
-                                    1
-                                }
-                                keyValues: list[f32] = {
-                                    0
-                                    0.5
-                                    1
-                                }
-                            }
-                            VfxProbabilityTableData {}
-                            VfxProbabilityTableData {}
-                        }
                         times: list[f32] = {
                             0
                         }
@@ -5094,30 +5026,6 @@ entries: map[hash,embed] = {
                 birthColor: embed = ValueColor {
                     constantValue: vec4 = { 0.525490224, 0, 0, 1 }
                     dynamics: pointer = VfxAnimatedColorVariableData {
-                        probabilityTables: list[pointer] = {
-                            VfxProbabilityTableData {
-                                keyTimes: list[f32] = {
-                                    0
-                                    1
-                                }
-                                keyValues: list[f32] = {
-                                    0
-                                    1
-                                }
-                            }
-                            VfxProbabilityTableData {}
-                            VfxProbabilityTableData {}
-                            VfxProbabilityTableData {
-                                keyTimes: list[f32] = {
-                                    0
-                                    1
-                                }
-                                keyValues: list[f32] = {
-                                    0.75
-                                    1
-                                }
-                            }
-                        }
                         times: list[f32] = {
                             0
                         }
@@ -6375,23 +6283,6 @@ entries: map[hash,embed] = {
                 blendMode: u8 = 4
                 birthColor: embed = ValueColor {
                     dynamics: pointer = VfxAnimatedColorVariableData {
-                        probabilityTables: list[pointer] = {
-                            VfxProbabilityTableData {}
-                            VfxProbabilityTableData {
-                                keyTimes: list[f32] = {
-                                    0
-                                    0.150000006
-                                    1
-                                }
-                                keyValues: list[f32] = {
-                                    0
-                                    0.5
-                                    1
-                                }
-                            }
-                            VfxProbabilityTableData {}
-                            VfxProbabilityTableData {}
-                        }
                         times: list[f32] = {
                             0
                         }
@@ -6791,23 +6682,6 @@ entries: map[hash,embed] = {
                 blendMode: u8 = 4
                 birthColor: embed = ValueColor {
                     dynamics: pointer = VfxAnimatedColorVariableData {
-                        probabilityTables: list[pointer] = {
-                            VfxProbabilityTableData {}
-                            VfxProbabilityTableData {
-                                keyTimes: list[f32] = {
-                                    0
-                                    0.150000006
-                                    1
-                                }
-                                keyValues: list[f32] = {
-                                    0
-                                    0.5
-                                    1
-                                }
-                            }
-                            VfxProbabilityTableData {}
-                            VfxProbabilityTableData {}
-                        }
                         times: list[f32] = {
                             0
                         }
@@ -7202,23 +7076,6 @@ entries: map[hash,embed] = {
                 blendMode: u8 = 1
                 birthColor: embed = ValueColor {
                     dynamics: pointer = VfxAnimatedColorVariableData {
-                        probabilityTables: list[pointer] = {
-                            VfxProbabilityTableData {}
-                            VfxProbabilityTableData {
-                                keyTimes: list[f32] = {
-                                    0
-                                    0.150000006
-                                    1
-                                }
-                                keyValues: list[f32] = {
-                                    0
-                                    0.5
-                                    1
-                                }
-                            }
-                            VfxProbabilityTableData {}
-                            VfxProbabilityTableData {}
-                        }
                         times: list[f32] = {
                             0
                         }
@@ -8988,23 +8845,6 @@ entries: map[hash,embed] = {
                 blendMode: u8 = 1
                 birthColor: embed = ValueColor {
                     dynamics: pointer = VfxAnimatedColorVariableData {
-                        probabilityTables: list[pointer] = {
-                            VfxProbabilityTableData {}
-                            VfxProbabilityTableData {
-                                keyTimes: list[f32] = {
-                                    0
-                                    0.150000006
-                                    1
-                                }
-                                keyValues: list[f32] = {
-                                    0
-                                    0.5
-                                    1
-                                }
-                            }
-                            VfxProbabilityTableData {}
-                            VfxProbabilityTableData {}
-                        }
                         times: list[f32] = {
                             0
                         }
@@ -9318,23 +9158,6 @@ entries: map[hash,embed] = {
                 blendMode: u8 = 4
                 birthColor: embed = ValueColor {
                     dynamics: pointer = VfxAnimatedColorVariableData {
-                        probabilityTables: list[pointer] = {
-                            VfxProbabilityTableData {}
-                            VfxProbabilityTableData {
-                                keyTimes: list[f32] = {
-                                    0
-                                    0.150000006
-                                    1
-                                }
-                                keyValues: list[f32] = {
-                                    0
-                                    0.5
-                                    1
-                                }
-                            }
-                            VfxProbabilityTableData {}
-                            VfxProbabilityTableData {}
-                        }
                         times: list[f32] = {
                             0
                         }
@@ -9815,23 +9638,6 @@ entries: map[hash,embed] = {
                 blendMode: u8 = 1
                 birthColor: embed = ValueColor {
                     dynamics: pointer = VfxAnimatedColorVariableData {
-                        probabilityTables: list[pointer] = {
-                            VfxProbabilityTableData {}
-                            VfxProbabilityTableData {
-                                keyTimes: list[f32] = {
-                                    0
-                                    0.150000006
-                                    1
-                                }
-                                keyValues: list[f32] = {
-                                    0
-                                    0.5
-                                    1
-                                }
-                            }
-                            VfxProbabilityTableData {}
-                            VfxProbabilityTableData {}
-                        }
                         times: list[f32] = {
                             0
                         }
@@ -10140,23 +9946,6 @@ entries: map[hash,embed] = {
                 blendMode: u8 = 4
                 birthColor: embed = ValueColor {
                     dynamics: pointer = VfxAnimatedColorVariableData {
-                        probabilityTables: list[pointer] = {
-                            VfxProbabilityTableData {}
-                            VfxProbabilityTableData {
-                                keyTimes: list[f32] = {
-                                    0
-                                    0.150000006
-                                    1
-                                }
-                                keyValues: list[f32] = {
-                                    0
-                                    0.5
-                                    1
-                                }
-                            }
-                            VfxProbabilityTableData {}
-                            VfxProbabilityTableData {}
-                        }
                         times: list[f32] = {
                             0
                         }
@@ -11482,23 +11271,6 @@ entries: map[hash,embed] = {
                 blendMode: u8 = 1
                 birthColor: embed = ValueColor {
                     dynamics: pointer = VfxAnimatedColorVariableData {
-                        probabilityTables: list[pointer] = {
-                            VfxProbabilityTableData {}
-                            VfxProbabilityTableData {
-                                keyTimes: list[f32] = {
-                                    0
-                                    0.150000006
-                                    1
-                                }
-                                keyValues: list[f32] = {
-                                    0
-                                    0.5
-                                    1
-                                }
-                            }
-                            VfxProbabilityTableData {}
-                            VfxProbabilityTableData {}
-                        }
                         times: list[f32] = {
                             0
                         }
@@ -11746,23 +11518,6 @@ entries: map[hash,embed] = {
                 blendMode: u8 = 1
                 birthColor: embed = ValueColor {
                     dynamics: pointer = VfxAnimatedColorVariableData {
-                        probabilityTables: list[pointer] = {
-                            VfxProbabilityTableData {}
-                            VfxProbabilityTableData {
-                                keyTimes: list[f32] = {
-                                    0
-                                    0.150000006
-                                    1
-                                }
-                                keyValues: list[f32] = {
-                                    0
-                                    0.5
-                                    1
-                                }
-                            }
-                            VfxProbabilityTableData {}
-                            VfxProbabilityTableData {}
-                        }
                         times: list[f32] = {
                             0
                         }
@@ -12262,30 +12017,6 @@ entries: map[hash,embed] = {
                 blendMode: u8 = 1
                 birthColor: embed = ValueColor {
                     dynamics: pointer = VfxAnimatedColorVariableData {
-                        probabilityTables: list[pointer] = {
-                            VfxProbabilityTableData {}
-                            VfxProbabilityTableData {
-                                keyTimes: list[f32] = {
-                                    0
-                                    1
-                                }
-                                keyValues: list[f32] = {
-                                    0
-                                    1
-                                }
-                            }
-                            VfxProbabilityTableData {}
-                            VfxProbabilityTableData {
-                                keyTimes: list[f32] = {
-                                    0
-                                    1
-                                }
-                                keyValues: list[f32] = {
-                                    0.5
-                                    1
-                                }
-                            }
-                        }
                         times: list[f32] = {
                             0
                         }
@@ -13382,23 +13113,6 @@ entries: map[hash,embed] = {
                 blendMode: u8 = 4
                 birthColor: embed = ValueColor {
                     dynamics: pointer = VfxAnimatedColorVariableData {
-                        probabilityTables: list[pointer] = {
-                            VfxProbabilityTableData {}
-                            VfxProbabilityTableData {
-                                keyTimes: list[f32] = {
-                                    0
-                                    0.150000006
-                                    1
-                                }
-                                keyValues: list[f32] = {
-                                    0
-                                    0.5
-                                    1
-                                }
-                            }
-                            VfxProbabilityTableData {}
-                            VfxProbabilityTableData {}
-                        }
                         times: list[f32] = {
                             0
                         }
@@ -13705,23 +13419,6 @@ entries: map[hash,embed] = {
                 blendMode: u8 = 1
                 birthColor: embed = ValueColor {
                     dynamics: pointer = VfxAnimatedColorVariableData {
-                        probabilityTables: list[pointer] = {
-                            VfxProbabilityTableData {}
-                            VfxProbabilityTableData {
-                                keyTimes: list[f32] = {
-                                    0
-                                    0.150000006
-                                    1
-                                }
-                                keyValues: list[f32] = {
-                                    0
-                                    0.5
-                                    1
-                                }
-                            }
-                            VfxProbabilityTableData {}
-                            VfxProbabilityTableData {}
-                        }
                         times: list[f32] = {
                             0
                         }
@@ -15811,23 +15508,6 @@ entries: map[hash,embed] = {
                 birthColor: embed = ValueColor {
                     constantValue: vec4 = { 1, 1, 0, 0.800000012 }
                     dynamics: pointer = VfxAnimatedColorVariableData {
-                        probabilityTables: list[pointer] = {
-                            VfxProbabilityTableData {}
-                            VfxProbabilityTableData {
-                                keyTimes: list[f32] = {
-                                    0
-                                    0.800000012
-                                    1
-                                }
-                                keyValues: list[f32] = {
-                                    0
-                                    0.100000001
-                                    0.5
-                                }
-                            }
-                            VfxProbabilityTableData {}
-                            VfxProbabilityTableData {}
-                        }
                         times: list[f32] = {
                             0
                         }
@@ -15936,8 +15616,8 @@ entries: map[hash,embed] = {
                             1
                         }
                         values: list[vec2] = {
-                            { -0, 0 }
-                            { -0, 0 }
+                            { 0, 0 }
+                            { 0, 0 }
                             { -0.300000012, 0.400000006 }
                             { -0.899999976, 1.20000005 }
                         }
@@ -16760,21 +16440,6 @@ entries: map[hash,embed] = {
                 birthColor: embed = ValueColor {
                     constantValue: vec4 = { 1, 1, 1, 0.600000024 }
                     dynamics: pointer = VfxAnimatedColorVariableData {
-                        probabilityTables: list[pointer] = {
-                            VfxProbabilityTableData {}
-                            VfxProbabilityTableData {}
-                            VfxProbabilityTableData {}
-                            VfxProbabilityTableData {
-                                keyTimes: list[f32] = {
-                                    0
-                                    1
-                                }
-                                keyValues: list[f32] = {
-                                    0.800000012
-                                    1
-                                }
-                            }
-                        }
                         times: list[f32] = {
                             0
                         }
@@ -16980,21 +16645,6 @@ entries: map[hash,embed] = {
                 birthColor: embed = ValueColor {
                     constantValue: vec4 = { 1, 1, 1, 0.600000024 }
                     dynamics: pointer = VfxAnimatedColorVariableData {
-                        probabilityTables: list[pointer] = {
-                            VfxProbabilityTableData {}
-                            VfxProbabilityTableData {}
-                            VfxProbabilityTableData {}
-                            VfxProbabilityTableData {
-                                keyTimes: list[f32] = {
-                                    0
-                                    1
-                                }
-                                keyValues: list[f32] = {
-                                    0.800000012
-                                    1
-                                }
-                            }
-                        }
                         times: list[f32] = {
                             0
                         }
@@ -17660,8 +17310,8 @@ entries: map[hash,embed] = {
                             { 0, -1.89999998 }
                             { 0, -1.89999998 }
                             { 0, -0.278816581 }
-                            { 0, -0 }
-                            { 0, -0 }
+                            { 0, 0 }
+                            { 0, 0 }
                         }
                     }
                 }
@@ -17945,7 +17595,7 @@ entries: map[hash,embed] = {
                             { 0, -2.5 }
                             { 0, -0.366863906 }
                             { 0, -0.25 }
-                            { 0, -0 }
+                            { 0, 0 }
                         }
                     }
                 }
@@ -18279,32 +17929,6 @@ entries: map[hash,embed] = {
                 birthColor: embed = ValueColor {
                     constantValue: vec4 = { 1, 1, 1, 0.839993894 }
                     dynamics: pointer = VfxAnimatedColorVariableData {
-                        probabilityTables: list[pointer] = {
-                            VfxProbabilityTableData {}
-                            VfxProbabilityTableData {
-                                keyTimes: list[f32] = {
-                                    0
-                                    0.150000006
-                                    1
-                                }
-                                keyValues: list[f32] = {
-                                    0
-                                    0.5
-                                    1
-                                }
-                            }
-                            VfxProbabilityTableData {}
-                            VfxProbabilityTableData {
-                                keyTimes: list[f32] = {
-                                    0
-                                    1
-                                }
-                                keyValues: list[f32] = {
-                                    0.5
-                                    1
-                                }
-                            }
-                        }
                         times: list[f32] = {
                             0
                         }
@@ -18610,23 +18234,6 @@ entries: map[hash,embed] = {
                 blendMode: u8 = 1
                 birthColor: embed = ValueColor {
                     dynamics: pointer = VfxAnimatedColorVariableData {
-                        probabilityTables: list[pointer] = {
-                            VfxProbabilityTableData {}
-                            VfxProbabilityTableData {
-                                keyTimes: list[f32] = {
-                                    0
-                                    0.150000006
-                                    1
-                                }
-                                keyValues: list[f32] = {
-                                    0
-                                    0.5
-                                    1
-                                }
-                            }
-                            VfxProbabilityTableData {}
-                            VfxProbabilityTableData {}
-                        }
                         times: list[f32] = {
                             0
                         }
@@ -19894,21 +19501,6 @@ entries: map[hash,embed] = {
                 birthColor: embed = ValueColor {
                     constantValue: vec4 = { 1, 1, 1, 0.770000756 }
                     dynamics: pointer = VfxAnimatedColorVariableData {
-                        probabilityTables: list[pointer] = {
-                            VfxProbabilityTableData {}
-                            VfxProbabilityTableData {}
-                            VfxProbabilityTableData {}
-                            VfxProbabilityTableData {
-                                keyTimes: list[f32] = {
-                                    0
-                                    1
-                                }
-                                keyValues: list[f32] = {
-                                    0.800000012
-                                    1
-                                }
-                            }
-                        }
                         times: list[f32] = {
                             0
                         }
@@ -21683,23 +21275,6 @@ entries: map[hash,embed] = {
                 birthColor: embed = ValueColor {
                     constantValue: vec4 = { 1, 1, 0, 0.800000012 }
                     dynamics: pointer = VfxAnimatedColorVariableData {
-                        probabilityTables: list[pointer] = {
-                            VfxProbabilityTableData {}
-                            VfxProbabilityTableData {
-                                keyTimes: list[f32] = {
-                                    0
-                                    0.800000012
-                                    1
-                                }
-                                keyValues: list[f32] = {
-                                    0
-                                    0.100000001
-                                    0.5
-                                }
-                            }
-                            VfxProbabilityTableData {}
-                            VfxProbabilityTableData {}
-                        }
                         times: list[f32] = {
                             0
                         }
@@ -21808,8 +21383,8 @@ entries: map[hash,embed] = {
                             1
                         }
                         values: list[vec2] = {
-                            { -0, 0 }
-                            { -0, 0 }
+                            { 0, 0 }
+                            { 0, 0 }
                             { -0.300000012, 0.400000006 }
                             { -0.899999976, 1.20000005 }
                         }
@@ -22496,7 +22071,7 @@ entries: map[hash,embed] = {
                             1
                         }
                         values: list[vec2] = {
-                            { 0, -0 }
+                            { 0, 0 }
                             { 0, -2 }
                             { 0, -1 }
                         }
@@ -22592,8 +22167,8 @@ entries: map[hash,embed] = {
                             1
                         }
                         values: list[vec2] = {
-                            { -0, -0 }
-                            { -0, -0 }
+                            { 0, 0 }
+                            { 0, 0 }
                             { -0.0599999987, -0.119999997 }
                         }
                     }
@@ -23472,23 +23047,6 @@ entries: map[hash,embed] = {
                 blendMode: u8 = 1
                 birthColor: embed = ValueColor {
                     dynamics: pointer = VfxAnimatedColorVariableData {
-                        probabilityTables: list[pointer] = {
-                            VfxProbabilityTableData {}
-                            VfxProbabilityTableData {
-                                keyTimes: list[f32] = {
-                                    0
-                                    0.150000006
-                                    1
-                                }
-                                keyValues: list[f32] = {
-                                    0
-                                    0.5
-                                    1
-                                }
-                            }
-                            VfxProbabilityTableData {}
-                            VfxProbabilityTableData {}
-                        }
                         times: list[f32] = {
                             0
                         }
@@ -23802,23 +23360,6 @@ entries: map[hash,embed] = {
                 blendMode: u8 = 4
                 birthColor: embed = ValueColor {
                     dynamics: pointer = VfxAnimatedColorVariableData {
-                        probabilityTables: list[pointer] = {
-                            VfxProbabilityTableData {}
-                            VfxProbabilityTableData {
-                                keyTimes: list[f32] = {
-                                    0
-                                    0.150000006
-                                    1
-                                }
-                                keyValues: list[f32] = {
-                                    0
-                                    0.5
-                                    1
-                                }
-                            }
-                            VfxProbabilityTableData {}
-                            VfxProbabilityTableData {}
-                        }
                         times: list[f32] = {
                             0
                         }
@@ -25323,23 +24864,6 @@ entries: map[hash,embed] = {
                 blendMode: u8 = 1
                 birthColor: embed = ValueColor {
                     dynamics: pointer = VfxAnimatedColorVariableData {
-                        probabilityTables: list[pointer] = {
-                            VfxProbabilityTableData {}
-                            VfxProbabilityTableData {
-                                keyTimes: list[f32] = {
-                                    0
-                                    0.150000006
-                                    1
-                                }
-                                keyValues: list[f32] = {
-                                    0
-                                    0.5
-                                    1
-                                }
-                            }
-                            VfxProbabilityTableData {}
-                            VfxProbabilityTableData {}
-                        }
                         times: list[f32] = {
                             0
                         }
@@ -25609,23 +25133,6 @@ entries: map[hash,embed] = {
                 birthColor: embed = ValueColor {
                     constantValue: vec4 = { 0.635294139, 0, 0, 1 }
                     dynamics: pointer = VfxAnimatedColorVariableData {
-                        probabilityTables: list[pointer] = {
-                            VfxProbabilityTableData {}
-                            VfxProbabilityTableData {
-                                keyTimes: list[f32] = {
-                                    0
-                                    0.150000006
-                                    1
-                                }
-                                keyValues: list[f32] = {
-                                    0
-                                    0.5
-                                    1
-                                }
-                            }
-                            VfxProbabilityTableData {}
-                            VfxProbabilityTableData {}
-                        }
                         times: list[f32] = {
                             0
                         }
@@ -26240,21 +25747,6 @@ entries: map[hash,embed] = {
                 birthColor: embed = ValueColor {
                     constantValue: vec4 = { 0.333333343, 0, 0, 0.619607866 }
                     dynamics: pointer = VfxAnimatedColorVariableData {
-                        probabilityTables: list[pointer] = {
-                            VfxProbabilityTableData {}
-                            VfxProbabilityTableData {}
-                            VfxProbabilityTableData {}
-                            VfxProbabilityTableData {
-                                keyTimes: list[f32] = {
-                                    0
-                                    1
-                                }
-                                keyValues: list[f32] = {
-                                    0.75
-                                    1
-                                }
-                            }
-                        }
                         times: list[f32] = {
                             0
                         }
