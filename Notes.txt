@@ -694,6 +694,56 @@ PersistentEffectConditions: list2[pointer] = {
         }
     }
 }
+
+replace this in skin0.bin (VFX/SFX handler) 
+PersistentEffectConditions: list2[pointer] = {
+    PersistentEffectConditionData {
+        OwnerCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+            Spell: hash = "Characters/Aatrox/Spells/AatroxPassiveAbility/AatroxPassiveReady"
+        }
+        PersistentVfxs: list2[embed] = {
+            PersistentVfxData {
+                boneName: string = "Weapon_Heart"
+                effectKey: hash = "Aatrox_P_Ready"
+            }
+        }
+    }
+}
+with this:
+PersistentEffectConditions: list2[pointer] = {
+    PersistentEffectConditionData {
+        OwnerCondition: pointer = HasBuffDynamicMaterialBoolDriver {
+            Spell: hash = "Characters/Aatrox/Spells/AatroxPassiveAbility/AatroxPassiveReady"
+        }
+        PersistentVfxs: list2[embed] = {
+            PersistentVfxData {
+                boneName: string = "Weapon_ExhaustLeft1"
+                effectKey: hash = "Aatrox_P_Ready"
+            }
+            PersistentVfxData {
+                boneName: string = "Weapon_ExhaustLeft2"
+                effectKey: hash = "Aatrox_P_Ready"
+            }
+            PersistentVfxData {
+                boneName: string = "Weapon_ExhaustLeft3"
+                effectKey: hash = "Aatrox_P_Ready"
+            }
+            PersistentVfxData {
+                boneName: string = "Weapon_ExhaustRight1"
+                effectKey: hash = "Aatrox_P_Ready"
+            }
+            PersistentVfxData {
+                boneName: string = "Weapon_ExhaustRight2"
+                effectKey: hash = "Aatrox_P_Ready"
+            }
+            PersistentVfxData {
+                boneName: string = "Weapon_ExhaustRight3"
+                effectKey: hash = "Aatrox_P_Ready"
+            }
+        }
+    }
+}
+
 ------------------------------------------------------------------------------------
 Aatrox_base_Q_cas3 = Aatrox Q3 vfx
 
