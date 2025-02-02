@@ -4209,3 +4209,7 @@ VfxEmitterDefinitionData {
 
 retrieve missing assets from Brand base skin using Assetor
 ------------------------------------------------------------------------------------
+Joke
+LtMAO -> animask_viewer -> load Nero SKL in Assets folder, and load skin0.bin file inside Data/Animations folder
+scroll down to r_elbow, and set values to zero
+and set the r_elbow1 to 0,0,1,0,0,1,0,0

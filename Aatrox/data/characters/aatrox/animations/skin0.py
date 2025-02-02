@@ -1458,11 +1458,11 @@ entries: map[hash,embed] = {
                             "Wings"
                         }
                     }
-                    "Characters/Aatrox/Skins/Skin0/Particles/Aatrox_Taunt_Wings" = ParticleEventData{
-                        mEffectKey: hash = "Aatrox_Taunt_Wings"
+                    0xa40b223a = ParticleEventData {
+                        mEffectKey: hash = 0x46efb5ce
                         mStartFrame: f32 = 1
                         mParticleEventDataPairList: list[embed] = {
-                            ParticleEventDataPair{
+                            ParticleEventDataPair {
                                 mBoneName: hash = "C_Buffbone_GLB_Layout_Loc"
                             }
                         }
@@ -1484,11 +1484,11 @@ entries: map[hash,embed] = {
                         mJointNameToOverride: hash = "weapon"
                         mJointNameToSnapTo: hash = "Weapon_World"
                     }
-                    "Characters/Aatrox/Skins/Skin0/Particles/Aatrox_Taunt_Wings_Loop" = ParticleEventData{
-                        mEffectKey: hash = "Aatrox_Taunt_Wings_Loop"
-                        mParticleEventDataPairList: list[embed]={
-                            ParticleEventDataPair{
-                                mBoneName: hash="C_Buffbone_GLB_Layout_Loc"
+                    0x8433eb75 = ParticleEventData {
+                        mEffectKey: hash = 0xcf5fe211
+                        mParticleEventDataPairList: list[embed] = {
+                            ParticleEventDataPair {
+                                mBoneName: hash = "C_Buffbone_GLB_Layout_Loc"
                             }
                         }
                     }
@@ -1846,11 +1846,23 @@ entries: map[hash,embed] = {
                     0
                     0
                     0
+                    0
+                    0
+                    0
+                    0
+                    0
+                    0
                 }
             }
             "empty" = MaskData {
                 mId: u32 = 1
                 mWeightList: list[f32] = {
+                    0
+                    0
+                    0
+                    0
+                    0
+                    0
                     0
                     0
                     0
@@ -2029,29 +2041,9 @@ entries: map[hash,embed] = {
                     1
                     1
                     1
-                    1
-                    1
-                    1
-                    1
-                    1
-                    1
-                    1
-                    1
-                    1
-                    1
-                    1
-                    1
                     0
-                    0
-                    0
-                    0
-                    0
-                    0
-                    0
-                    0
-                    0
-                    0
-                    0
+                    1
+                    1
                     1
                     1
                     1
@@ -2065,6 +2057,26 @@ entries: map[hash,embed] = {
                     0
                     0
                     0
+                    0
+                    0
+                    0
+                    0
+                    0
+                    0
+                    0
+                    1
+                    1
+                    1
+                    1
+                    1
+                    1
+                    1
+                    1
+                    1
+                    0
+                    0
+                    0
+                    0
                     1
                     0
                     1
@@ -2093,6 +2105,12 @@ entries: map[hash,embed] = {
                     1
                     0
                     1
+                    0
+                    0
+                    0
+                    0
+                    0
+                    0
                     0
                     0
                     0
@@ -2138,6 +2156,12 @@ entries: map[hash,embed] = {
                     1
                     1
                     1
+                    0
+                    0
+                    0
+                    0
+                    0
+                    0
                     0
                     0
                     0
@@ -2371,6 +2395,12 @@ entries: map[hash,embed] = {
                     1
                     1
                     1
+                    0
+                    0
+                    0
+                    0
+                    0
+                    0
                 }
             }
             0xa80ed47a = MaskData {
@@ -2422,7 +2452,7 @@ entries: map[hash,embed] = {
                     1
                     1
                     1
-                    1
+                    0
                     1
                     1
                     1
@@ -2484,6 +2514,12 @@ entries: map[hash,embed] = {
                     1
                     0
                     1
+                    0
+                    0
+                    0
+                    0
+                    0
+                    0
                     0
                     0
                     0
@@ -2633,6 +2669,12 @@ entries: map[hash,embed] = {
                     0
                     0
                     0
+                    0
+                    0
+                    0
+                    0
+                    0
+                    0
                 }
             }
             "BUFFBONE" = MaskData {
@@ -2722,6 +2764,12 @@ entries: map[hash,embed] = {
                     0
                     0
                     1
+                    0
+                    0
+                    0
+                    0
+                    0
+                    0
                     0
                     0
                     0
