@@ -23,7 +23,7 @@ entries: map[hash,embed] = {
         loadscreen: embed = CensoredImage {
             image: string = "ASSETS/Characters/Aatrox/Skins/Base/AatroxLoadscreen.dds"
         }
-        0xeda7817e: link = "Characters/Aatrox/Skins/Skin0/Materials/UI_Base_HoL_Ahri_Skin86_inst"
+        0xeda7817e: link = 0xb41bce4a
         skinAudioProperties: embed = skinAudioProperties {
             tagEventList: list[string] = {
                 "Aatrox"
@@ -272,7 +272,7 @@ entries: map[hash,embed] = {
         }
         healthBarData: embed = CharacterHealthBarDataRecord {
             attachToBone: string = "Buffbone_Cstm_Healthbar"
-            unitHealthBarStyle: u8 = 11
+            unitHealthBarStyle: u8 = 12
         }
         mResourceResolver: link = "Characters/Aatrox/Skins/Skin0/Resources"
         PersistentEffectConditions: list2[pointer] = {
@@ -362,7 +362,7 @@ entries: map[hash,embed] = {
                 birthScale0: embed = ValueVector3 {
                     constantValue: vec3 = { 1.00100005, 1.00100005, 1.00100005 }
                 }
-                texture: string = "ASSETS/Characters/Aatrox/Skins/Base/Particles/Aatrox_Base_E_buff_avatar.dds"
+                texture: string = "ASSETS/Characters/Aatrox/Skins/Base/Particles/Aatrox_Base_E_buff_avatar.tex"
                 uvMode: u8 = 2
             }
             VfxEmitterDefinitionData {
@@ -418,7 +418,7 @@ entries: map[hash,embed] = {
                 birthScale0: embed = ValueVector3 {
                     constantValue: vec3 = { 1.00999999, 1.00999999, 1.00999999 }
                 }
-                texture: string = "ASSETS/Characters/Aatrox/Skins/Base/Particles/Aatrox_Base_E_buff_avatar_sheen.dds"
+                texture: string = "ASSETS/Characters/Aatrox/Skins/Base/Particles/Aatrox_Base_E_buff_avatar_sheen.tex"
                 uvMode: u8 = 2
                 birthUvScrollRate: embed = ValueVector2 {
                     constantValue: vec2 = { 0, 2 }
@@ -495,7 +495,7 @@ entries: map[hash,embed] = {
                         }
                     }
                     erosionFeatherOut: f32 = 0.300000012
-                    erosionMapName: string = "ASSETS/Characters/Aatrox/Skins/Base/Particles/Aatrox_Base_Q_SmokeErode.dds"
+                    erosionMapName: string = "ASSETS/Characters/Aatrox/Skins/Base/Particles/Aatrox_Base_Q_SmokeErode.tex"
                     erosionMapChannelMixer: embed = ValueColor {
                         constantValue: vec4 = { 1, 0, 0, 0 }
                     }
@@ -507,7 +507,7 @@ entries: map[hash,embed] = {
                 birthScale0: embed = ValueVector3 {
                     constantValue: vec3 = { 1.00999999, 1, 1 }
                 }
-                texture: string = "ASSETS/Characters/Aatrox/Skins/Base/Mat_Body.dds"
+                texture: string = "ASSETS/Characters/Aatrox/Skins/Base/Mat_Body.tex"
                 numFrames: u16 = 4
             }
             VfxEmitterDefinitionData {
@@ -565,7 +565,7 @@ entries: map[hash,embed] = {
                 birthScale0: embed = ValueVector3 {
                     constantValue: vec3 = { 1.00999999, 1, 1 }
                 }
-                texture: string = "ASSETS/Characters/Aatrox/Skins/Base/Mat_Sword.dds"
+                texture: string = "ASSETS/Characters/Aatrox/Skins/Base/Mat_Sword.tex"
                 numFrames: u16 = 4
             }
             VfxEmitterDefinitionData {
@@ -632,7 +632,7 @@ entries: map[hash,embed] = {
                         }
                     }
                     erosionFeatherOut: f32 = 0.300000012
-                    erosionMapName: string = "ASSETS/Characters/Aatrox/Skins/Base/Particles/Aatrox_Base_Q_SmokeErode.dds"
+                    erosionMapName: string = "ASSETS/Characters/Aatrox/Skins/Base/Particles/Aatrox_Base_Q_SmokeErode.tex"
                     erosionMapChannelMixer: embed = ValueColor {
                         constantValue: vec4 = { 1, 0, 0, 0 }
                     }
@@ -644,7 +644,7 @@ entries: map[hash,embed] = {
                 birthScale0: embed = ValueVector3 {
                     constantValue: vec3 = { 1.00999999, 1, 1 }
                 }
-                texture: string = "ASSETS/Characters/Aatrox/Skins/Base/Mat_Wings.dds"
+                texture: string = "ASSETS/Characters/Aatrox/Skins/Base/Mat_Wings.tex"
                 numFrames: u16 = 4
             }
         }
@@ -659,10 +659,10 @@ entries: map[hash,embed] = {
                     constantValue: f32 = 400
                 }
                 particleLifetime: embed = ValueFloat {
-                    constantValue: f32 = 0.05
+                    constantValue: f32 = 0.0500000007
                 }
                 particleLinger: option[f32] = {
-                    0.05
+                    0.0500000007
                 }
                 emitterName: string = "new_flame"
                 birthVelocity: embed = ValueVector3 {
@@ -834,10 +834,10 @@ entries: map[hash,embed] = {
                     constantValue: f32 = 20
                 }
                 particleLifetime: embed = ValueFloat {
-                    constantValue: f32 = 0.05
+                    constantValue: f32 = 0.0500000007
                 }
                 particleLinger: option[f32] = {
-                    0.05
+                    0.0500000007
                 }
                 emitterName: string = "new_flame_haze"
                 Filtering: pointer = VfxEmitterFiltering {
@@ -946,110 +946,110 @@ entries: map[hash,embed] = {
         particleName: string = "Aatrox_Base_P_Ready"
         particlePath: string = "Characters/Aatrox/Skins/Skin0/Particles/Aatrox_Base_P_Ready"
     }
-    "Characters/Aatrox/Skins/Skin0/Particles/Aatrox_Taunt_Wings" = VfxSystemDefinitionData{
-        complexEmitterDefinitionData: list[pointer] ={
+    0xa40b223a = VfxSystemDefinitionData {
+        complexEmitterDefinitionData: list[pointer] = {
             VfxEmitterDefinitionData {
-                Rate: embed = ValueFloat {
-                    ConstantValue: f32 = 1
+                rate: embed = ValueFloat {
+                    constantValue: f32 = 1
                 }
-                ParticleLifetime: embed = ValueFloat {
-                    ConstantValue: f32 = 13.33
+                particleLifetime: embed = ValueFloat {
+                    constantValue: f32 = 13.3299999
                 }
-                Lifetime: option[f32] = {
-                    13.33
+                lifetime: option[f32] = {
+                    13.3299999
                 }
-                IsSingleParticle: flag = true
-                EmitterName: string = "WingsAnim"
-                BindWeight: embed = ValueFloat {
-                    ConstantValue: f32 = 1
+                isSingleParticle: flag = true
+                emitterName: string = "WingsAnim"
+                bindWeight: embed = ValueFloat {
+                    constantValue: f32 = 1
                 }
-                0x3bf0b4ed: pointer = 0xee39916f {
-                    EmitOffset: vec3 = { 0, 180, -50 }
+                SpawnShape: pointer = 0xee39916f {
+                    emitOffset: vec3 = { 0, 180, -50 }
                 }
-                Primitive: pointer = VfxPrimitiveMesh {
+                primitive: pointer = VfxPrimitiveMesh {
                     mMesh: embed = VfxMeshDefinitionData {
                         mMeshName: string = "ASSETS/Characters/Aatrox/Skins/Base/Particles/Aatrox_Taunt_Wings.skn"
                         mMeshSkeletonName: string = "ASSETS/Characters/Aatrox/Skins/Base/Particles/Aatrox_Taunt_Wings.skl"
                         mAnimationName: string = "ASSETS/Characters/Aatrox/Skins/Base/Animations/aatrox_taunt_wings.anm"
                     }
                 }
-                BlendMode: u8 = 1
-                Color: embed = ValueColor {
-                    ConstantValue: vec4 = { 1.0, 1.0, 1.0, 1 }
+                blendMode: u8 = 1
+                color: embed = ValueColor {
+                    constantValue: vec4 = { 1, 1, 1, 1 }
                 }
                 birthRotation0: embed = ValueVector3 {
                     constantValue: vec3 = { 0, 140, 0 }
                 }
-                BirthScale0: embed = ValueVector3 {
-                    ConstantValue: vec3 = { 1, 1, 1 }
+                birthScale0: embed = ValueVector3 {
+                    constantValue: vec3 = { 1, 1, 1 }
                 }
-                Texture: string = "ASSETS/Characters/Aatrox/Skins/Base/Mat_Wings.dds"
+                texture: string = "ASSETS/Characters/Aatrox/Skins/Base/Mat_Wings.tex"
             }
         }
         particleName: string = "Aatrox_Taunt_Wings"
-        particlePath: string="Characters/Aatrox/Skins/Skin0/Particles/Aatrox_Taunt_Wings"
+        particlePath: string = "Characters/Aatrox/Skins/Skin0/Particles/Aatrox_Taunt_Wings"
     }
-    "Characters/Aatrox/Skins/Skin0/Particles/Aatrox_Taunt_Wings_Loop" = VfxSystemDefinitionData{
-        complexEmitterDefinitionData: list[pointer] ={
+    0x8433eb75 = VfxSystemDefinitionData {
+        complexEmitterDefinitionData: list[pointer] = {
             VfxEmitterDefinitionData {
-                Rate: embed = ValueFloat {
-                    ConstantValue: f32 = 1
+                rate: embed = ValueFloat {
+                    constantValue: f32 = 1
                 }
-                ParticleLifetime: embed = ValueFloat {
-                    ConstantValue: f32 = 13.33
+                particleLifetime: embed = ValueFloat {
+                    constantValue: f32 = 13.3299999
                 }
-                Lifetime: option[f32] = {
-                    13.33
+                lifetime: option[f32] = {
+                    13.3299999
                 }
-                IsSingleParticle: flag = true
-                EmitterName: string = "WingsAnim"
-                BindWeight: embed = ValueFloat {
-                    ConstantValue: f32 = 1
+                isSingleParticle: flag = true
+                emitterName: string = "WingsAnim"
+                bindWeight: embed = ValueFloat {
+                    constantValue: f32 = 1
                 }
-                0x3bf0b4ed: pointer = 0xee39916f {
-                    EmitOffset: vec3 = { 0, 180, -50 }
+                SpawnShape: pointer = 0xee39916f {
+                    emitOffset: vec3 = { 0, 180, -50 }
                 }
-                Primitive: pointer = VfxPrimitiveMesh {
+                primitive: pointer = VfxPrimitiveMesh {
                     mMesh: embed = VfxMeshDefinitionData {
                         mMeshName: string = "ASSETS/Characters/Aatrox/Skins/Base/Particles/Aatrox_Taunt_Wings.skn"
                         mMeshSkeletonName: string = "ASSETS/Characters/Aatrox/Skins/Base/Particles/Aatrox_Taunt_Wings.skl"
                         mAnimationName: string = "ASSETS/Characters/Aatrox/Skins/Base/Animations/aatrox_taunt_wings_loop.anm"
                     }
                 }
-                BlendMode: u8 = 1
-                Color: embed = ValueColor {
-                    ConstantValue: vec4 = { 1.0, 1.0, 1.0, 1 }
+                blendMode: u8 = 1
+                color: embed = ValueColor {
+                    constantValue: vec4 = { 1, 1, 1, 1 }
                 }
                 birthRotation0: embed = ValueVector3 {
                     constantValue: vec3 = { 0, 140, 0 }
                 }
-                BirthScale0: embed = ValueVector3 {
-                    ConstantValue: vec3 = { 1, 1, 1 }
+                birthScale0: embed = ValueVector3 {
+                    constantValue: vec3 = { 1, 1, 1 }
                 }
-                Texture: string = "ASSETS/Characters/Aatrox/Skins/Base/Mat_Wings.dds"
+                texture: string = "ASSETS/Characters/Aatrox/Skins/Base/Mat_Wings.tex"
             }
         }
         particleName: string = "Aatrox_Taunt_Wings_Loop"
-        particlePath: string="Characters/Aatrox/Skins/Skin0/Particles/Aatrox_Taunt_Wings_Loop"
+        particlePath: string = "Characters/Aatrox/Skins/Skin0/Particles/Aatrox_Taunt_Wings_Loop"
     }
     "Characters/Aatrox/Skins/Skin0/Materials/Sword_inst" = StaticMaterialDef {
         name: string = "Characters/Aatrox/Skins/Skin0/Materials/Sword_inst"
         samplerValues: list2[embed] = {
             StaticMaterialShaderSamplerDef {
-                samplerName: string = "Diffuse_Texture"
-                textureName: string = "ASSETS/Characters/Aatrox/Skins/Base/Aatrox_Base_Sword_TX_CM.dds"
+                textureName: string = "Diffuse_Texture"
+                texturePath: string = "ASSETS/Characters/Aatrox/Skins/Base/Aatrox_Base_Sword_TX_CM.tex"
                 addressU: u32 = 1
                 addressV: u32 = 1
                 addressW: u32 = 1
             }
             StaticMaterialShaderSamplerDef {
-                samplerName: string = "Mask_Texture"
-                textureName: string = "ASSETS/Characters/Aatrox/Skins/Base/Particles/Aatrox_Base_P_Sword_Mask.dds"
+                textureName: string = "Mask_Texture"
+                texturePath: string = "ASSETS/Characters/Aatrox/Skins/Base/Particles/Aatrox_Base_P_Sword_Mask.tex"
                 addressW: u32 = 1
             }
             StaticMaterialShaderSamplerDef {
-                samplerName: string = "Gradient_Texture"
-                textureName: string = "ASSETS/Shared/Materials/Gradient_test_01.dds"
+                textureName: string = "Gradient_Texture"
+                texturePath: string = "ASSETS/Shared/Materials/Gradient_test_01.dds"
                 addressU: u32 = 1
                 addressV: u32 = 1
             }
@@ -1155,15 +1155,15 @@ entries: map[hash,embed] = {
         name: string = "Characters/Aatrox/Skins/Skin0/Materials/Banner_inst"
         samplerValues: list2[embed] = {
             StaticMaterialShaderSamplerDef {
-                samplerName: string = "Diffuse_Texture"
-                textureName: string = "ASSETS/Characters/Aatrox/Skins/Base/Particles/Aatrox_Base_I_Banner_color.dds"
+                textureName: string = "Diffuse_Texture"
+                texturePath: string = "ASSETS/Characters/Aatrox/Skins/Base/Particles/Aatrox_Base_I_Banner_color.tex"
                 addressU: u32 = 1
                 addressV: u32 = 1
                 addressW: u32 = 1
             }
             StaticMaterialShaderSamplerDef {
-                samplerName: string = "Mask_Texture"
-                textureName: string = "ASSETS/Characters/Aatrox/Skins/Base/Particles/Aatrox_Base_I_Banner.dds"
+                textureName: string = "Mask_Texture"
+                texturePath: string = "ASSETS/Characters/Aatrox/Skins/Base/Particles/Aatrox_Base_I_Banner.tex"
                 addressW: u32 = 1
             }
         }
@@ -1233,22 +1233,22 @@ entries: map[hash,embed] = {
         name: string = "Characters/Aatrox/Skins/Skin0/Materials/Aatrox_VFXBase_inst"
         samplerValues: list2[embed] = {
             StaticMaterialShaderSamplerDef {
-                samplerName: string = "Diffuse_Texture"
-                textureName: string = "ASSETS/Characters/Aatrox/Skins/Base/Aatrox_Base_TX_CM.dds"
+                textureName: string = "Diffuse_Texture"
+                texturePath: string = "ASSETS/Characters/Aatrox/Skins/Base/Aatrox_Base_TX_CM.tex"
                 addressU: u32 = 1
                 addressV: u32 = 1
                 addressW: u32 = 1
             }
             StaticMaterialShaderSamplerDef {
-                samplerName: string = "Mask_Texture"
-                textureName: string = "ASSETS/Characters/Aatrox/Skins/Base/Particles/Aatrox_Base_R_body_mask.dds"
+                textureName: string = "Mask_Texture"
+                texturePath: string = "ASSETS/Characters/Aatrox/Skins/Base/Particles/Aatrox_Base_R_body_mask.tex"
                 addressU: u32 = 1
                 addressV: u32 = 1
                 addressW: u32 = 1
             }
             StaticMaterialShaderSamplerDef {
-                samplerName: string = "Gradient_Texture"
-                textureName: string = "ASSETS/Shared/Materials/Gradient_test_01.dds"
+                textureName: string = "Gradient_Texture"
+                texturePath: string = "ASSETS/Shared/Materials/Gradient_test_01.dds"
                 addressU: u32 = 1
                 addressV: u32 = 1
                 addressW: u32 = 1
@@ -1389,20 +1389,20 @@ entries: map[hash,embed] = {
         name: string = "Characters/Aatrox/Skins/Skin0/Materials/Wing_inst"
         samplerValues: list2[embed] = {
             StaticMaterialShaderSamplerDef {
-                samplerName: string = "Diffuse_Texture"
-                textureName: string = "ASSETS/Characters/Aatrox/Skins/Base/Aatrox_Wings_TX_CM.dds"
+                textureName: string = "Diffuse_Texture"
+                texturePath: string = "ASSETS/Characters/Aatrox/Skins/Base/Aatrox_Wings_TX_CM.tex"
                 addressU: u32 = 1
                 addressV: u32 = 1
                 addressW: u32 = 1
             }
             StaticMaterialShaderSamplerDef {
-                samplerName: string = "Mask_Texture"
-                textureName: string = "ASSETS/Characters/Aatrox/Skins/Base/Particles/Aatrox_Base_R_wing_mask.dds"
+                textureName: string = "Mask_Texture"
+                texturePath: string = "ASSETS/Characters/Aatrox/Skins/Base/Particles/Aatrox_Base_R_wing_mask.tex"
                 addressW: u32 = 1
             }
             StaticMaterialShaderSamplerDef {
-                samplerName: string = "Gradient_Texture"
-                textureName: string = "ASSETS/Characters/Aatrox/Skins/Base/Particles/Aatrox_Base_R_mat_gradient.dds"
+                textureName: string = "Gradient_Texture"
+                texturePath: string = "ASSETS/Characters/Aatrox/Skins/Base/Particles/Aatrox_Base_R_mat_gradient.tex"
                 addressU: u32 = 1
                 addressV: u32 = 1
             }
@@ -1566,13 +1566,13 @@ entries: map[hash,embed] = {
             }
         }
     }
-    "Characters/Aatrox/Skins/Skin0/Materials/UI_Base_HoL_Ahri_Skin86_inst" = StaticMaterialDef {
+    0xb41bce4a = StaticMaterialDef {
         name: string = "Characters/Aatrox/Skins/Skin0/Materials/UI_Base_HoL_Ahri_Skin86_inst"
         type: u32 = 3
         samplerValues: list2[embed] = {
             StaticMaterialShaderSamplerDef {
-                samplerName: string = "UI_Secondary_Texture"
-                textureName: string = "ASSETS/Characters/Aatrox/Skins/base/ahriLoadMaskPacked.SKINS_Ahri_HoL.tex"
+                textureName: string = "UI_Secondary_Texture"
+                texturePath: string = "ASSETS/Characters/Aatrox/Skins/base/ahriLoadMaskPacked.SKINS_Ahri_HoL.tex"
                 addressW: u32 = 1
             }
         }
@@ -1601,7 +1601,7 @@ entries: map[hash,embed] = {
             }
             StaticMaterialShaderParamDef {
                 name: string = "UI_Secondary_DistortionControl"
-                value: vec4 = { 0.025, 0.0025, 0, 0 }
+                value: vec4 = { 0.0250000004, 0.00249999994, 0, 0 }
             }
             StaticMaterialShaderParamDef {
                 name: string = "UI_Secondary_R_UVRorationSpeed"
@@ -1693,7 +1693,7 @@ entries: map[hash,embed] = {
             }
             StaticMaterialShaderParamDef {
                 name: string = "Shine_Strength"
-                value: vec4 = { 0.01, 0, 0, 0 }
+                value: vec4 = { 0.00999999978, 0, 0, 0 }
             }
             StaticMaterialShaderParamDef {
                 name: string = "Shine_Color"
@@ -1849,8 +1849,8 @@ entries: map[hash,embed] = {
             0x5b2b3b83 = "Maps/Particles/SRX/Base/SRX_Audio_Hextech_Storm_loop"
             0x2c43403d = "Maps/Particles/SR/SRU_Braziers_Chemtech_Child_02"
             0x20bae730 = "Maps/Shipping/Map22/Particles/Set9/TFT9_Trait_Demacia_Celebration_Child7"
-            "Aatrox_Taunt_Wings" = "Characters/Aatrox/Skins/Skin0/Particles/Aatrox_Taunt_Wings"
-            "Aatrox_Taunt_Wings_Loop" = "Characters/Aatrox/Skins/Skin0/Particles/Aatrox_Taunt_Wings_Loop"
+            0x46efb5ce = 0xa40b223a
+            0xcf5fe211 = 0x8433eb75
         }
     }
 }

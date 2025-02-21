@@ -137,7 +137,7 @@ entries: map[hash,embed] = {
             "ASSETS/Characters/Aatrox/HUD/Aatrox_Square.tex"
         }
         healthBarData: embed = CharacterHealthBarDataRecord {
-            unitHealthBarStyle: u8 = 11
+            unitHealthBarStyle: u8 = 12
         }
         PersistentEffectConditions: list2[pointer] = {
             PersistentEffectConditionData {
