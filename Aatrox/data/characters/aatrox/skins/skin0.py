@@ -21,9 +21,8 @@ entries: map[hash,embed] = {
         championSkinName: string = "Aatrox"
         metaDataTags: string = "gender:male,race:darkin,element:dark"
         loadscreen: embed = CensoredImage {
-            image: string = "ASSETS/Characters/Aatrox/Skins/Base/AatroxLoadscreen.dds"
+            image: string = "ASSETS/Characters/Aatrox/Skins/Base/AatroxLoadscreen.tex"
         }
-        0xeda7817e: link = 0xb41bce4a
         skinAudioProperties: embed = skinAudioProperties {
             tagEventList: list[string] = {
                 "Aatrox"
@@ -116,9 +115,10 @@ entries: map[hash,embed] = {
                     }
                     events: list[string] = {
                         "Play_vo_Aatrox_AatroxE_cast3D"
-                        "Play_vo_Aatrox_AatroxQ_OnCast"
+                        "Play_vo_Aatrox_AatroxQ2_cast3D"
+                        "Play_vo_Aatrox_AatroxQ3_cast3D"
+                        "Play_vo_Aatrox_AatroxQ_cast3D"
                         "Play_vo_Aatrox_AatroxR_cast3D"
-                        "Play_vo_Aatrox_AatroxRRevive_OnBuffCast"
                         "Play_vo_Aatrox_AatroxW_cast3D"
                         "Play_vo_Aatrox_Attack2DGeneral"
                         "Play_vo_Aatrox_Attack2DPantheon"
@@ -200,6 +200,7 @@ entries: map[hash,embed] = {
                         "Play_vo_Aatrox_Move2DRReady"
                         "Play_vo_Aatrox_Move2DStandard"
                         "Play_vo_Aatrox_Taunt3DGeneral"
+                        "Play_vo_Aatrox_UseItem3DGuardianAngelR"
                     }
                     voiceOver: bool = true
                 }
@@ -211,7 +212,7 @@ entries: map[hash,embed] = {
         skinMeshProperties: embed = SkinMeshDataProperties {
             skeleton: string = "ASSETS/Characters/Aatrox/Skins/Base/Aatrox.skl"
             simpleSkin: string = "ASSETS/Characters/Aatrox/Skins/Base/Aatrox.skn"
-            texture: string = "ASSETS/Characters/Aatrox/Skins/Base/Mat_Body.dds"
+            texture: string = "ASSETS/Characters/Aatrox/Skins/Base/Mat_Body.tex"
             skinScale: f32 = 1.09000003
             selfIllumination: f32 = 0.699999988
             brushAlphaOverride: f32 = 0.550000012
@@ -224,19 +225,19 @@ entries: map[hash,embed] = {
             initialSubmeshShadowsToHide: string = "Banner"
             materialOverride: list[embed] = {
                 SkinMeshDataProperties_MaterialOverride {
-                    texture: string = "ASSETS/Characters/Aatrox/Skins/Base/Mat_Sword.dds"
+                    texture: string = "ASSETS/Characters/Aatrox/Skins/Base/Mat_Sword.tex"
                     submesh: string = "Sword"
                 }
                 SkinMeshDataProperties_MaterialOverride {
-                    texture: string = "ASSETS/Characters/Aatrox/Skins/Base/Mat_Body.dds"
+                    texture: string = "ASSETS/Characters/Aatrox/Skins/Base/Mat_Body.tex"
                     submesh: string = "Body"
                 }
                 SkinMeshDataProperties_MaterialOverride {
-                    texture: string = "ASSETS/Characters/Aatrox/Skins/Base/Mat_Wings.dds"
+                    texture: string = "ASSETS/Characters/Aatrox/Skins/Base/Mat_Wings.tex"
                     submesh: string = "Wings"
                 }
                 SkinMeshDataProperties_MaterialOverride {
-                    texture: string = "ASSETS/Characters/Aatrox/Skins/Base/Mat_Banner.dds"
+                    texture: string = "ASSETS/Characters/Aatrox/Skins/Base/Mat_Banner.tex"
                     submesh: string = "Banner"
                 }
             }
@@ -265,10 +266,10 @@ entries: map[hash,embed] = {
         }
         mContextualActionData: link = "Characters/Aatrox/CAC/Aatrox_Base"
         iconCircle: option[string] = {
-            "ASSETS/Characters/Aatrox/HUD/Aatrox_Circle.dds"
+            "ASSETS/Characters/Aatrox/HUD/Aatrox_Circle.tex"
         }
         iconSquare: option[string] = {
-            "ASSETS/Characters/Aatrox/HUD/Aatrox_Square.dds"
+            "ASSETS/Characters/Aatrox/HUD/Aatrox_Square.tex"
         }
         healthBarData: embed = CharacterHealthBarDataRecord {
             attachToBone: string = "Buffbone_Cstm_Healthbar"
@@ -753,7 +754,7 @@ entries: map[hash,embed] = {
                         constantValue: vec3 = { 0, 0, 0 }
                     }
                 }
-                particleColorTexture: string = "ASSETS/Characters/Aatrox/Skins/Base/Particles/color-flamethrower.dds"
+                particleColorTexture: string = "ASSETS/Characters/Aatrox/Skins/Base/Particles/color-flamethrower.tex"
                 blendMode: u8 = 4
                 colorLookUpTypeY: u8 = 3
                 isDirectionOriented: flag = true
@@ -825,7 +826,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Aatrox/Skins/Base/Particles/Flames_Flamethrower.dds"
+                texture: string = "ASSETS/Characters/Aatrox/Skins/Base/Particles/Flames_Flamethrower.tex"
                 numFrames: u16 = 16
                 texDiv: vec2 = { 4, 4 }
             }
@@ -904,13 +905,13 @@ entries: map[hash,embed] = {
                         constantValue: vec3 = { 0, 0, 0 }
                     }
                 }
-                particleColorTexture: string = "ASSETS/Characters/Aatrox/Skins/Base/Particles/Rumble_color-distortbell32.dds"
+                particleColorTexture: string = "ASSETS/Characters/Aatrox/Skins/Base/Particles/Rumble_color-distortbell32.tex"
                 blendMode: u8 = 1
                 pass: i16 = 10
                 distortionDefinition: pointer = VfxDistortionDefinitionData {
                     distortion: f32 = 0.200000003
                     distortionMode: u8 = 2
-                    normalMapTexture: string = "ASSETS/Characters/Aatrox/Skins/Base/Particles/Rumble_distort-heat.dds"
+                    normalMapTexture: string = "ASSETS/Characters/Aatrox/Skins/Base/Particles/Rumble_distort-heat.tex"
                 }
                 birthRotation0: embed = ValueVector3 {
                     constantValue: vec3 = { 0, 0, 0 }
@@ -940,7 +941,7 @@ entries: map[hash,embed] = {
                 birthScale0: embed = ValueVector3 {
                     constantValue: vec3 = { 25, 25, 0 }
                 }
-                texture: string = "ASSETS/Characters/Aatrox/Skins/Base/Particles/Rumble_color-hold.dds"
+                texture: string = "ASSETS/Characters/Aatrox/Skins/Base/Particles/Rumble_color-hold.tex"
             }
         }
         particleName: string = "Aatrox_Base_P_Ready"
