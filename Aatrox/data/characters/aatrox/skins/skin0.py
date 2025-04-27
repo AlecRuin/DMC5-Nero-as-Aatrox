@@ -23,7 +23,6 @@ entries: map[hash,embed] = {
         loadscreen: embed = CensoredImage {
             image: string = "ASSETS/Characters/Aatrox/Skins/Base/AatroxLoadscreen.tex"
         }
-        0xeda7817e: link = "Characters/Aatrox/Skins/Skin0/Materials/UI_Base_HoL_Ahri_Skin86_inst"
         skinAudioProperties: embed = skinAudioProperties {
             tagEventList: list[string] = {
                 "Aatrox"
@@ -948,7 +947,7 @@ entries: map[hash,embed] = {
         particleName: string = "Aatrox_Base_P_Ready"
         particlePath: string = "Characters/Aatrox/Skins/Skin0/Particles/Aatrox_Base_P_Ready"
     }
-    "Characters/Aatrox/Skins/Skin0/Particles/Aatrox_Taunt_Wings" = VfxSystemDefinitionData {
+    0xa40b223a = VfxSystemDefinitionData {
         complexEmitterDefinitionData: list[pointer] = {
             VfxEmitterDefinitionData {
                 rate: embed = ValueFloat {
@@ -991,7 +990,7 @@ entries: map[hash,embed] = {
         particleName: string = "Aatrox_Taunt_Wings"
         particlePath: string = "Characters/Aatrox/Skins/Skin0/Particles/Aatrox_Taunt_Wings"
     }
-    "Characters/Aatrox/Skins/Skin0/Particles/Aatrox_Taunt_Wings_Loop" = VfxSystemDefinitionData {
+    0x8433eb75 = VfxSystemDefinitionData {
         complexEmitterDefinitionData: list[pointer] = {
             VfxEmitterDefinitionData {
                 rate: embed = ValueFloat {
@@ -1568,7 +1567,7 @@ entries: map[hash,embed] = {
             }
         }
     }
-    "Characters/Aatrox/Skins/Skin0/Materials/UI_Base_HoL_Ahri_Skin86_inst" = StaticMaterialDef {
+    0xb41bce4a = StaticMaterialDef {
         name: string = "Characters/Aatrox/Skins/Skin0/Materials/UI_Base_HoL_Ahri_Skin86_inst"
         type: u32 = 3
         samplerValues: list2[embed] = {
@@ -1581,10 +1580,10 @@ entries: map[hash,embed] = {
         paramValues: list2[embed] = {
             StaticMaterialShaderParamDef {
                 name: string = "UI_Primary_UVRotation_Offset"
-                value: vec4 = { 0.5, 0.5, 0, 0 }
+                value: vec4 = { 0.25, 0.25, 0, 0 }
             }
             StaticMaterialShaderParamDef {
-                name: string = "UI_Primary_UVRorationSpeed"
+                name: string = "UI_Primary_UVRotationSpeed"
                 value: vec4 = { 1, 0, 0, 0 }
             }
             StaticMaterialShaderParamDef {
@@ -1603,7 +1602,7 @@ entries: map[hash,embed] = {
             }
             StaticMaterialShaderParamDef {
                 name: string = "UI_Secondary_DistortionControl"
-                value: vec4 = { 0.0500000007, 0.00499999989, 0, 0 }
+                value: vec4 = { 0.0250000004, 0.00249999994, 0, 0 }
             }
             StaticMaterialShaderParamDef {
                 name: string = "UI_Secondary_R_UVRorationSpeed"
@@ -1687,7 +1686,7 @@ entries: map[hash,embed] = {
             }
             StaticMaterialShaderParamDef {
                 name: string = "Shine_FrequencySpeed"
-                value: vec4 = { 10, 8, 0, 0 }
+                value: vec4 = { 5, 4, 0, 0 }
             }
             StaticMaterialShaderParamDef {
                 name: string = "Shine_Direction"
@@ -1695,7 +1694,7 @@ entries: map[hash,embed] = {
             }
             StaticMaterialShaderParamDef {
                 name: string = "Shine_Strength"
-                value: vec4 = { 0.0199999996, 0, 0, 0 }
+                value: vec4 = { 0.00999999978, 0, 0, 0 }
             }
             StaticMaterialShaderParamDef {
                 name: string = "Shine_Color"
@@ -1851,8 +1850,8 @@ entries: map[hash,embed] = {
             0x5b2b3b83 = "Maps/Particles/SRX/Base/SRX_Audio_Hextech_Storm_loop"
             0x2c43403d = "Maps/Particles/SR/SRU_Braziers_Chemtech_Child_02"
             0x20bae730 = "Maps/Shipping/Map22/Particles/Set9/TFT9_Trait_Demacia_Celebration_Child7"
-            0x46efb5ce = "Characters/Aatrox/Skins/Skin0/Particles/Aatrox_Taunt_Wings"
-            0xcf5fe211 = "Characters/Aatrox/Skins/Skin0/Particles/Aatrox_Taunt_Wings_Loop"
+            0x46efb5ce = 0xa40b223a
+            0xcf5fe211 = 0x8433eb75
         }
     }
 }

@@ -1846,11 +1846,25 @@ entries: map[hash,embed] = {
                     0
                     0
                     0
+                    0
+                    0
+                    0
+                    0
+                    0
+                    0
+                    0
                 }
             }
             "empty" = MaskData {
                 mId: u32 = 1
                 mWeightList: list[f32] = {
+                    0
+                    0
+                    0
+                    0
+                    0
+                    0
+                    0
                     0
                     0
                     0
@@ -2029,29 +2043,9 @@ entries: map[hash,embed] = {
                     1
                     1
                     1
-                    1
-                    1
-                    1
-                    1
-                    1
-                    1
-                    1
-                    1
-                    1
-                    1
-                    1
-                    1
                     0
-                    0
-                    0
-                    0
-                    0
-                    0
-                    0
-                    0
-                    0
-                    0
-                    0
+                    1
+                    1
                     1
                     1
                     1
@@ -2065,6 +2059,26 @@ entries: map[hash,embed] = {
                     0
                     0
                     0
+                    0
+                    0
+                    0
+                    0
+                    0
+                    0
+                    0
+                    1
+                    1
+                    1
+                    1
+                    1
+                    1
+                    1
+                    1
+                    1
+                    0
+                    0
+                    0
+                    0
                     1
                     0
                     1
@@ -2075,23 +2089,6 @@ entries: map[hash,embed] = {
                     1
                     0
                     1
-                    1
-                    0
-                    0
-                    0
-                    0
-                    0
-                    0
-                    0
-                    0
-                    0
-                    0
-                    0
-                    0
-                    0
-                    0
-                    1
-                    0
                     1
                     0
                     0
@@ -2107,8 +2104,32 @@ entries: map[hash,embed] = {
                     0
                     0
                     0
+                    1
+                    0
+                    1
                     0
                     0
+                    0
+                    0
+                    0
+                    0
+                    0
+                    0
+                    0
+                    0
+                    0
+                    0
+                    0
+                    0
+                    0
+                    0
+                    0
+                    0
+                    0
+                    0
+                    0
+                    0
+                    1
                 }
             }
             "Wings" = MaskData {
@@ -2138,6 +2159,13 @@ entries: map[hash,embed] = {
                     1
                     1
                     1
+                    0
+                    0
+                    0
+                    0
+                    0
+                    0
+                    0
                     0
                     0
                     0
@@ -2371,6 +2399,13 @@ entries: map[hash,embed] = {
                     1
                     1
                     1
+                    0
+                    0
+                    0
+                    0
+                    0
+                    0
+                    0
                 }
             }
             0xa80ed47a = MaskData {
@@ -2422,7 +2457,7 @@ entries: map[hash,embed] = {
                     1
                     1
                     1
-                    1
+                    0
                     1
                     1
                     1
@@ -2502,6 +2537,13 @@ entries: map[hash,embed] = {
                     0
                     0
                     0
+                    0
+                    0
+                    0
+                    0
+                    0
+                    0
+                    1
                 }
             }
             "LowerBody" = MaskData {
@@ -2633,6 +2675,13 @@ entries: map[hash,embed] = {
                     0
                     0
                     0
+                    0
+                    0
+                    0
+                    0
+                    0
+                    0
+                    0
                 }
             }
             "BUFFBONE" = MaskData {
@@ -2722,6 +2771,13 @@ entries: map[hash,embed] = {
                     0
                     0
                     1
+                    0
+                    0
+                    0
+                    0
+                    0
+                    0
+                    0
                     0
                     0
                     0
