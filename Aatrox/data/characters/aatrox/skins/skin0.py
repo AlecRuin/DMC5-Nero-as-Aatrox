@@ -21,9 +21,9 @@ entries: map[hash,embed] = {
         championSkinName: string = "Aatrox"
         metaDataTags: string = "gender:male,race:darkin,element:dark"
         loadscreen: embed = CensoredImage {
-            image: string = "ASSETS/Characters/Aatrox/Skins/Base/AatroxLoadscreen.dds"
+            image: string = "ASSETS/Characters/Aatrox/Skins/Base/AatroxLoadscreen.tex"
         }
-        0xeda7817e: link = 0xb41bce4a
+        0xeda7817e: link = "Characters/Aatrox/Skins/Skin0/Materials/UI_Base_HoL_Ahri_Skin86_inst"
         skinAudioProperties: embed = skinAudioProperties {
             tagEventList: list[string] = {
                 "Aatrox"
@@ -116,9 +116,10 @@ entries: map[hash,embed] = {
                     }
                     events: list[string] = {
                         "Play_vo_Aatrox_AatroxE_cast3D"
-                        "Play_vo_Aatrox_AatroxQ_OnCast"
+                        "Play_vo_Aatrox_AatroxQ2_cast3D"
+                        "Play_vo_Aatrox_AatroxQ3_cast3D"
+                        "Play_vo_Aatrox_AatroxQ_cast3D"
                         "Play_vo_Aatrox_AatroxR_cast3D"
-                        "Play_vo_Aatrox_AatroxRRevive_OnBuffCast"
                         "Play_vo_Aatrox_AatroxW_cast3D"
                         "Play_vo_Aatrox_Attack2DGeneral"
                         "Play_vo_Aatrox_Attack2DPantheon"
@@ -200,6 +201,7 @@ entries: map[hash,embed] = {
                         "Play_vo_Aatrox_Move2DRReady"
                         "Play_vo_Aatrox_Move2DStandard"
                         "Play_vo_Aatrox_Taunt3DGeneral"
+                        "Play_vo_Aatrox_UseItem3DGuardianAngelR"
                     }
                     voiceOver: bool = true
                 }
@@ -211,7 +213,7 @@ entries: map[hash,embed] = {
         skinMeshProperties: embed = SkinMeshDataProperties {
             skeleton: string = "ASSETS/Characters/Aatrox/Skins/Base/Aatrox.skl"
             simpleSkin: string = "ASSETS/Characters/Aatrox/Skins/Base/Aatrox.skn"
-            texture: string = "ASSETS/Characters/Aatrox/Skins/Base/Mat_Body.dds"
+            texture: string = "ASSETS/Characters/Aatrox/Skins/Base/Mat_Body.tex"
             skinScale: f32 = 1.09000003
             selfIllumination: f32 = 0.699999988
             brushAlphaOverride: f32 = 0.550000012
@@ -224,19 +226,19 @@ entries: map[hash,embed] = {
             initialSubmeshShadowsToHide: string = "Banner"
             materialOverride: list[embed] = {
                 SkinMeshDataProperties_MaterialOverride {
-                    texture: string = "ASSETS/Characters/Aatrox/Skins/Base/Mat_Sword.dds"
+                    texture: string = "ASSETS/Characters/Aatrox/Skins/Base/Mat_Sword.tex"
                     submesh: string = "Sword"
                 }
                 SkinMeshDataProperties_MaterialOverride {
-                    texture: string = "ASSETS/Characters/Aatrox/Skins/Base/Mat_Body.dds"
+                    texture: string = "ASSETS/Characters/Aatrox/Skins/Base/Mat_Body.tex"
                     submesh: string = "Body"
                 }
                 SkinMeshDataProperties_MaterialOverride {
-                    texture: string = "ASSETS/Characters/Aatrox/Skins/Base/Mat_Wings.dds"
+                    texture: string = "ASSETS/Characters/Aatrox/Skins/Base/Mat_Wings.tex"
                     submesh: string = "Wings"
                 }
                 SkinMeshDataProperties_MaterialOverride {
-                    texture: string = "ASSETS/Characters/Aatrox/Skins/Base/Mat_Banner.dds"
+                    texture: string = "ASSETS/Characters/Aatrox/Skins/Base/Mat_Banner.tex"
                     submesh: string = "Banner"
                 }
             }
@@ -265,10 +267,10 @@ entries: map[hash,embed] = {
         }
         mContextualActionData: link = "Characters/Aatrox/CAC/Aatrox_Base"
         iconCircle: option[string] = {
-            "ASSETS/Characters/Aatrox/HUD/Aatrox_Circle.dds"
+            "ASSETS/Characters/Aatrox/HUD/Aatrox_Circle.tex"
         }
         iconSquare: option[string] = {
-            "ASSETS/Characters/Aatrox/HUD/Aatrox_Square.dds"
+            "ASSETS/Characters/Aatrox/HUD/Aatrox_Square.tex"
         }
         healthBarData: embed = CharacterHealthBarDataRecord {
             attachToBone: string = "Buffbone_Cstm_Healthbar"
@@ -753,7 +755,7 @@ entries: map[hash,embed] = {
                         constantValue: vec3 = { 0, 0, 0 }
                     }
                 }
-                particleColorTexture: string = "ASSETS/Characters/Aatrox/Skins/Base/Particles/color-flamethrower.dds"
+                particleColorTexture: string = "ASSETS/Characters/Aatrox/Skins/Base/Particles/color-flamethrower.tex"
                 blendMode: u8 = 4
                 colorLookUpTypeY: u8 = 3
                 isDirectionOriented: flag = true
@@ -825,7 +827,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Aatrox/Skins/Base/Particles/Flames_Flamethrower.dds"
+                texture: string = "ASSETS/Characters/Aatrox/Skins/Base/Particles/Flames_Flamethrower.tex"
                 numFrames: u16 = 16
                 texDiv: vec2 = { 4, 4 }
             }
@@ -904,13 +906,13 @@ entries: map[hash,embed] = {
                         constantValue: vec3 = { 0, 0, 0 }
                     }
                 }
-                particleColorTexture: string = "ASSETS/Characters/Aatrox/Skins/Base/Particles/Rumble_color-distortbell32.dds"
+                particleColorTexture: string = "ASSETS/Characters/Aatrox/Skins/Base/Particles/Rumble_color-distortbell32.tex"
                 blendMode: u8 = 1
                 pass: i16 = 10
                 distortionDefinition: pointer = VfxDistortionDefinitionData {
                     distortion: f32 = 0.200000003
                     distortionMode: u8 = 2
-                    normalMapTexture: string = "ASSETS/Characters/Aatrox/Skins/Base/Particles/Rumble_distort-heat.dds"
+                    normalMapTexture: string = "ASSETS/Characters/Aatrox/Skins/Base/Particles/Rumble_distort-heat.tex"
                 }
                 birthRotation0: embed = ValueVector3 {
                     constantValue: vec3 = { 0, 0, 0 }
@@ -940,13 +942,13 @@ entries: map[hash,embed] = {
                 birthScale0: embed = ValueVector3 {
                     constantValue: vec3 = { 25, 25, 0 }
                 }
-                texture: string = "ASSETS/Characters/Aatrox/Skins/Base/Particles/Rumble_color-hold.dds"
+                texture: string = "ASSETS/Characters/Aatrox/Skins/Base/Particles/Rumble_color-hold.tex"
             }
         }
         particleName: string = "Aatrox_Base_P_Ready"
         particlePath: string = "Characters/Aatrox/Skins/Skin0/Particles/Aatrox_Base_P_Ready"
     }
-    0xa40b223a = VfxSystemDefinitionData {
+    "Characters/Aatrox/Skins/Skin0/Particles/Aatrox_Taunt_Wings" = VfxSystemDefinitionData {
         complexEmitterDefinitionData: list[pointer] = {
             VfxEmitterDefinitionData {
                 rate: embed = ValueFloat {
@@ -989,7 +991,7 @@ entries: map[hash,embed] = {
         particleName: string = "Aatrox_Taunt_Wings"
         particlePath: string = "Characters/Aatrox/Skins/Skin0/Particles/Aatrox_Taunt_Wings"
     }
-    0x8433eb75 = VfxSystemDefinitionData {
+    "Characters/Aatrox/Skins/Skin0/Particles/Aatrox_Taunt_Wings_Loop" = VfxSystemDefinitionData {
         complexEmitterDefinitionData: list[pointer] = {
             VfxEmitterDefinitionData {
                 rate: embed = ValueFloat {
@@ -1566,7 +1568,7 @@ entries: map[hash,embed] = {
             }
         }
     }
-    0xb41bce4a = StaticMaterialDef {
+    "Characters/Aatrox/Skins/Skin0/Materials/UI_Base_HoL_Ahri_Skin86_inst" = StaticMaterialDef {
         name: string = "Characters/Aatrox/Skins/Skin0/Materials/UI_Base_HoL_Ahri_Skin86_inst"
         type: u32 = 3
         samplerValues: list2[embed] = {
@@ -1579,10 +1581,10 @@ entries: map[hash,embed] = {
         paramValues: list2[embed] = {
             StaticMaterialShaderParamDef {
                 name: string = "UI_Primary_UVRotation_Offset"
-                value: vec4 = { 0.25, 0.25, 0, 0 }
+                value: vec4 = { 0.5, 0.5, 0, 0 }
             }
             StaticMaterialShaderParamDef {
-                name: string = "UI_Primary_UVRotationSpeed"
+                name: string = "UI_Primary_UVRorationSpeed"
                 value: vec4 = { 1, 0, 0, 0 }
             }
             StaticMaterialShaderParamDef {
@@ -1601,7 +1603,7 @@ entries: map[hash,embed] = {
             }
             StaticMaterialShaderParamDef {
                 name: string = "UI_Secondary_DistortionControl"
-                value: vec4 = { 0.0250000004, 0.00249999994, 0, 0 }
+                value: vec4 = { 0.0500000007, 0.00499999989, 0, 0 }
             }
             StaticMaterialShaderParamDef {
                 name: string = "UI_Secondary_R_UVRorationSpeed"
@@ -1685,7 +1687,7 @@ entries: map[hash,embed] = {
             }
             StaticMaterialShaderParamDef {
                 name: string = "Shine_FrequencySpeed"
-                value: vec4 = { 5, 4, 0, 0 }
+                value: vec4 = { 10, 8, 0, 0 }
             }
             StaticMaterialShaderParamDef {
                 name: string = "Shine_Direction"
@@ -1693,7 +1695,7 @@ entries: map[hash,embed] = {
             }
             StaticMaterialShaderParamDef {
                 name: string = "Shine_Strength"
-                value: vec4 = { 0.00999999978, 0, 0, 0 }
+                value: vec4 = { 0.0199999996, 0, 0, 0 }
             }
             StaticMaterialShaderParamDef {
                 name: string = "Shine_Color"
@@ -1849,8 +1851,8 @@ entries: map[hash,embed] = {
             0x5b2b3b83 = "Maps/Particles/SRX/Base/SRX_Audio_Hextech_Storm_loop"
             0x2c43403d = "Maps/Particles/SR/SRU_Braziers_Chemtech_Child_02"
             0x20bae730 = "Maps/Shipping/Map22/Particles/Set9/TFT9_Trait_Demacia_Celebration_Child7"
-            0x46efb5ce = 0xa40b223a
-            0xcf5fe211 = 0x8433eb75
+            0x46efb5ce = "Characters/Aatrox/Skins/Skin0/Particles/Aatrox_Taunt_Wings"
+            0xcf5fe211 = "Characters/Aatrox/Skins/Skin0/Particles/Aatrox_Taunt_Wings_Loop"
         }
     }
 }
